@@ -1,6 +1,6 @@
 # INTPROG In-Class Tests
 
-A selection of in-class tests from the first-year Introduction to Programming (INTPROG) module at the University of Portsmouth. These have been separated by semester.
+A selection of in-class tests from the first-year Introduction to Programming (INTPROG) module at the University of Portsmouth. These are separated by semester.
 
 ## Semester 1
 A total of three in-class tests, all of which were written in Python.
