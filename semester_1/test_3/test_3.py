@@ -34,10 +34,8 @@ def draw_stacked_circles():
 
     for i in range(diameter * 5, radius, -diameter):
         for j in range(radius + offset, diameter * 5 + offset, diameter):
-
             click = win.getMouse()
             click_x = click.getX()
-
             circle = Circle(Point(j, i - 20), radius)
 
             colour_circles(click_x, circle, win)
@@ -50,6 +48,8 @@ def colour_circles(click_x, circle, win):
     '''
     Check co-ordinates of a mouse click to determine the fill and outline colours.
     '''
+    outline_colour, fill_colour = "", ""
+
     if click_x < 400:
         outline_colour = "green"
         if click_x < 200:
