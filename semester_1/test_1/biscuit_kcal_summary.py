@@ -1,6 +1,3 @@
-# Week 3 - 11/10/2018
-
-
 def biscuit_slices():
     '''
     Calculate the number of biscuit slices that may be eaten by someone watching their calorie intake.
