@@ -13,7 +13,7 @@ def draw_positioned_circles():
     win = GraphWin("Circles", 800, 200)
     radius = 20
 
-    for i in range(15):
+    for _ in range(15):
         click = win.getMouse()
         click_x = click.getX()
         circle = Circle(click, radius)
