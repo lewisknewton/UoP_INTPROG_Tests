@@ -7,9 +7,6 @@ def main():
 
 
 def draw_positioned_circles():
-    '''
-    Draw 15 circles on each mouse click, changing fill and outline colours depending on the X co-ordinates and placing them in the same point clicked.
-    '''
     win = GraphWin("Circles", 800, 200)
     radius = 20
 
@@ -22,9 +19,6 @@ def draw_positioned_circles():
 
 
 def draw_stacked_circles():
-    '''
-    Draw 25 circles on each mouse click, changing fill and outline colours depending on the X co-ordinates and stacking in rows of 5.
-    '''
     win = GraphWin("Circles", 800, 200)
     radius = 20
     diameter = radius * 2
@@ -45,9 +39,6 @@ def draw_stacked_circles():
 
 
 def colour_circles(click_x, circle, win):
-    '''
-    Check co-ordinates of a mouse click to determine the fill and outline colours.
-    '''
     outline_colour, fill_colour = "", ""
 
     if click_x < 400:

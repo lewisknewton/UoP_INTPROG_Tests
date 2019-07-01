@@ -1,7 +1,4 @@
 def biscuit_slices():
-    '''
-    Calculate the number of biscuit slices that may be eaten by someone watching their calorie intake.
-    '''
     tray_length = float(input('Tray Length (cm): '))
     tray_width = float(input('Tray Width (cm): '))
     num_slices = int(input('Number of Slices: '))

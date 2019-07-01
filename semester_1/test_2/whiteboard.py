@@ -2,9 +2,6 @@ from graphics import GraphWin, Circle, Point, Line, Rectangle, Text
 
 
 def write_letters(win):
-    '''
-    Draw the eight letters on the whiteboard after each mouse click.
-    '''
     eight_letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 
     # Write the eight letters on the whiteboard
@@ -22,20 +19,16 @@ def write_letters(win):
 
 
 def draw_classroom():
-    '''
-    Draw the teacher, whiteboard, and marker pen.
-    '''
     win = GraphWin("Stick figure", 300, 200)
+
     head = Circle(Point(100, 60), 20)
-    head.draw(win)
     body = Line(Point(100, 80), Point(100, 120))
-    body.draw(win)
     arms = Line(Point(70, 90), Point(130, 90))
-    arms.draw(win)
-    leg1 = Line(Point(100, 120), Point(80, 170))
-    leg1.draw(win)
-    leg2 = Line(Point(100, 120), Point(120, 170))
-    leg2.draw(win)
+    leg_l = Line(Point(100, 120), Point(80, 170))
+    leg_r = Line(Point(100, 120), Point(120, 170))
+
+    for body_part in [head, body, arms, leg_l, leg_r]:
+        body_part.draw(win)
 
     # Draw the Whiteboard
     whiteboard = Rectangle(Point(140, 50), Point(290, 150))
